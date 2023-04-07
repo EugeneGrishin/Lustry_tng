@@ -1,0 +1,85 @@
+﻿li a {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.menu-button1 {
+    position: absolute;
+    width: 138px;
+    height: 31px;
+    left: 370px;
+    top: 79px; 
+    z-index: 1;
+}
+.menu-button2 {
+    position: absolute;
+    width: 137px;
+    height: 30px;
+    left: 542px;
+    top: 80px;
+    z-index: 1;
+}
+.menu-button3 {
+    position: absolute;
+    width: 138px;
+    height: 29px;
+    left: 712px;
+    top: 80px;
+    z-index: 1;
+}
+.menu-button4 {
+    position: absolute;
+    width: 170px;
+    height: 31px;
+    left: 1050px;
+    top: 79px;
+    z-index: 1;
+}
+.menu-button5 {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    left: 1255px;
+    top: 80px;
+    z-index: 1;
+}
+.menu-button6{
+    position: absolute;
+    width: 141px;
+    height: 32px;
+    left: 1409px;
+    top: 80px;
+    z-index: 1;
+}
+li a:hover {
+    color: rgb(0, 0, 0); 
+   }
+.head {
+    position: absolute;
+    width: 1923px;
+    height: 191.92px;
+    left: -2px;
+    top: 0px;
+    
+    background: #000000;   
+}
+.navpage {
+    position: absolute;
+width: 1923px;
+height: 33.28px;
+left: -2px;
+top: 78px;
+
+background: #811919;
+}
+.logo {
+    position: absolute;
+width: 186px;
+height: 191.92px;
+left: 851px;
+top: 2.08px;
+}
