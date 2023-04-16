@@ -1,4 +1,4 @@
-﻿li a {
+﻿ul.menu a {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
@@ -174,4 +174,157 @@ color: #FFFFFF;
     top: 50%;
     bottom: 85.89%;
     
+}
+.advantages{
+position: absolute;
+width: 759px;
+height: 83px;
+left: 580px;
+top: 987px;
+
+font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 71px;
+text-align: center;
+
+color: #000000;
+}
+.adv{
+    font-family: 'Oswald';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: center;
+
+color: #000000;
+}
+.adv_1{
+    position: absolute;
+    width: 186px;
+    height: 92px;
+    left: 468px;
+    top: 1131px;
+}
+.adv_2{
+    position: absolute;
+    width: 230px;
+    height: 77px;
+    left: 863px;
+    top: 1135px;
+}
+.adv_3{
+    position: absolute;
+    width: 230px;
+    height: 54px;
+    left: 1320px;
+    top: 1135px;
+}
+.adv_4{
+    position: absolute;
+    width: 180px;
+    height: 84px;
+    left: 468px;
+    top: 1233px;
+}
+.adv_5{
+    position: absolute;
+    width: 230px;
+    height: 77px;
+    left: 863px;
+    top: 1236px;
+}
+.adv_6{
+    position: absolute;
+    width: 230px;
+    height: 77px;
+    left: 1320px;
+    top: 1240px;
+}
+.adv1{
+    position: absolute;
+width: 66px;
+height: 81px;
+left: 370px;
+top: 1114px;
+}
+.adv2{
+    position: absolute;
+    width: 66px;
+    height: 61px;
+    left: 797px;
+    top: 1124px;
+}
+.adv3{
+    position: absolute;
+    width: 85px;
+    height: 74px;
+    left: 1235px;
+    top: 1121px;
+}
+.adv4{
+    position: absolute;
+    width: 38px;
+    height: 63px;
+    left: 384px;
+    top: 1243px;
+}
+.adv5{
+    position: absolute;
+    width: 58px;
+    height: 70px;
+    left: 797px;
+    top: 1240px;
+}
+.adv6{
+    position: absolute;
+    width: 70px;
+    height: 71px;
+    left: 1243px;
+    top: 1243px;
+}
+.consult{
+    position: absolute;
+    width: 364px;
+    height: 48px;
+    left: 780px;
+    top: 1405px;
+    
+    background: #811919;
+    border-radius: 79px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.line{
+    position: absolute;
+    width: 1920px;
+    height: 0px;
+    top: 1485px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.75);
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+.section2_text{
+    position: absolute;
+    width: 407px;
+    height: 45.63px;
+    left: 263px;
+    top: 1495px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 47px;
+    
+    color: #000000;
 }
