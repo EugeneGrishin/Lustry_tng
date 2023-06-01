@@ -1,4 +1,8 @@
-﻿ul.menu a {
+﻿@font-face{
+    font-family: "Intro Regular";
+    src: url(fonts\ofont.ru_Intro.ttf);
+}
+ul.menu a {
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
@@ -811,3 +815,61 @@ color: #000000;
     left: 200.69px;
     top: 50px;
 }
+.number{
+    position: absolute;
+    width: 144.77px;
+    height: 37.33px;
+    left: 412.36px;
+    top: 50px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    
+    color: #FFFFFF; 
+}
+.kr{
+    position: absolute;
+    width: 374.41px;
+    height: 97px;
+    left: 399.38px;
+    top: 200px;
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    
+    color: rgba(207, 207, 207, 0.81) 
+}
+
+.consult_2{
+    position: absolute;
+    width: 243.62px;
+    height: 30px;
+    left: 415.37px;
+    
+    
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #FFFFFF;
+    position: absolute;
+    width: 257.6px;
+    height: 48px;
+    left: 399.38px;
+    top: 100px;
+    
+    background: #811919;
+    border-radius: 45px;
+}
+
