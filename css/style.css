@@ -591,7 +591,7 @@ top: 1114px;
     position: absolute;
     width: 364px;
     height: 30px;
-    left: 767px;
+    left: 400px;
     top: 3372.4px;
 
     background: #811919;
@@ -599,7 +599,7 @@ top: 1114px;
     position: absolute;
     width: 223.44px;
     height: 60px;
-    left: 830.02px;
+    left: 780px;
     top: 175px;
 
     font-family: 'Oswald';
@@ -627,7 +627,7 @@ top: 1114px;
     position: absolute;
     width: 280px;
     height: 76px;
-    left: 675px;
+    left: 600px;
     top: 20px;
     
     font-family: 'Marmelad';
@@ -643,14 +643,14 @@ top: 1114px;
     position: absolute;
     width: 787px;
     height: 390px;
-    left: 274px;
+    left: 200px;
     
 }
 .panel_1{
     position: absolute;
     width: 285px;
     height: 141px;
-    left: 684px;
+    left: 600px;
     top: 130px;
 
     font-family: 'Roboto';
@@ -665,7 +665,7 @@ color: #000000;
     position: absolute;
     width: 285px;
     height: 141px;
-    left: 1380px;
+    right: 300px;
     top: 130px;
     
     font-family: 'Roboto';
@@ -678,10 +678,11 @@ color: #000000;
 }
 .panel_2_head{
     position: absolute;
-    width: 330px;
+    width: 400px;
     height: 108px;
-    left: 1375px;
+    right: 250px;
     top: 20px;
+    
     
     font-family: 'Marmelad';
     font-style: normal;
@@ -697,13 +698,13 @@ color: #000000;
     position: absolute;
     width: 787px;
     height: 390px;
-    left: 986px;
+    right: 200px;
 }
 .panel_3{
     position: absolute;
     width: 285px;
     height: 141px;
-    left: 684px;
+    left: 600px;
     top: 550px;
     
     font-family: 'Roboto';
@@ -718,7 +719,7 @@ color: #000000;
     position: absolute;
     width: 311px;
     height: 76px;
-    left: 668px;
+    left: 600px;
     top: 450px;
     
     font-family: 'Marmelad';
@@ -733,15 +734,15 @@ color: #000000;
 .panel_3_img{
     position: absolute;
     width: 787px;
-    height: 406.12px;
-    left: 274px;
+    height: 390px;
+    left: 200px;
     top: 400px;
 }
 .panel_4{
     position: absolute;
     width: 285px;
     height: 141px;
-    left: 1380px;
+    right: 300px;
     top: 550px;
     
     font-family: 'Roboto';
@@ -756,8 +757,9 @@ color: #000000;
     position: absolute;
     width: 280px;
     height: 76px;
-    left: 1375px;
+    right: 300px;
     top: 450px;
+    display: flex;
     
     font-family: 'Marmelad';
     font-style: normal;
@@ -772,7 +774,7 @@ color: #000000;
     position: absolute;
     width: 787px;
     height: 390px;
-    left: 986px;
+    right: 200px;
     top: 400px;
 }
 .price{
@@ -991,10 +993,10 @@ color: #000000;
 }
 .providers_list{
     position: absolute;
-    width: 1920px;
+    width: 100%;
     height: 170.21px;
-    left: 2px;
-    top: 4100px;
+    left: 0px;
+    margin-bottom: -10px;
 }
 .profit_1, .profit_2, .profit_3{
     font-family: 'Roboto';
@@ -1218,15 +1220,12 @@ color: #000000;
     width: 100%;
     height: 303px;
     left: 0;
-    top: 4600px;
+    top: 5500px;
 }
 .footer_background{
     position: absolute;
     width: 1920px;
     height: 303px;
-    
-    
-    
     background: #000000;
 }
 .logo_footer{
@@ -1266,6 +1265,89 @@ color: #000000;
     
     color: rgba(207, 207, 207, 0.81) 
 }
+.footer_nav {
+    display: flex;
+    align-items: end;
+    
+    font-family: 'Roboto';
+    font-style: light;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+.footer_nav_1 {
+    position: absolute;
+    width: 97.2px;
+    height: 43px;
+    left: 1040.16px;
+    top: 50px;
+}
+.footer_nav_2 {
+    position: absolute;
+    width: 97.2px;
+    height: 42px;
+    left: 1040.16px;
+    top: 100px;
+}
+.footer_nav_3 {
+    position: absolute;
+    width: 264.55px;
+    height: 42px;
+    left: 1040.16px;
+    top: 150px;
+}
+.footer_nav_4 {
+    position: absolute;
+    width: 97.2px;
+    height: 43px;
+    left: 1271px;
+    top: 50px;
+}
+.footer_nav_5 {
+    position: absolute;
+    width: 97.2px;
+    height: 42px;
+    left: 1271px;
+    top: 100px;
+}
+.footer_nav_6 {
+    position: absolute;
+    width: 97.2px;
+    height: 42px;
+    left: 1271px;
+    top: 150px;
+}
+.adress, .phone{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+
+    
+    display: flex;
+    align-items: center;
+    
+    color: #8A8A8A;
+}
+.adress {
+    position: absolute;
+    width: 209px;
+    height: 22px;
+    left: 1341px;
+    top: 25px;
+}
+.phone {
+    position: absolute;
+    width: 120px;
+    height: 22px;
+    left: 1432px;
+    top: 40px;
+}
+
 
 .consult_2{
     position: absolute;
