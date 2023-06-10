@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href=".\css\style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,13 +39,13 @@
             
         </span>
         <div class="navpage"></div>
-        <img class="logo" src="logo\эмблема.png">
+        <img class="logo" src="..\logo\эмблема.png">
     </nav>
 
     </header>
     <main>
         <div>
-            <img class="slider" src="images\sldimg.png">
+            <img class="slider" src="..\images\sldimg.png">
             <h1 class="slider-header">Какая встреча пройдет продуктивнее? </h1>
             <p class="slider-text">Холодные оттенки света стимулируют умственную и физическую активность человека, помогают сконцентрироваться.</p>
             <div class="slider-section_turned"></div>
@@ -64,31 +64,59 @@
             <li>
                 <li>
                     <a class="adv_1">Большой каталог поставок</a>
-                    <img class="adv1" src="images\adv1.png">
+                    <img class="adv1" src="..\images\adv1.png">
                 </li>
                 <li>
                     <a class="adv_2">Бесплатная консультация за 30 минут</a>
-                    <img class="adv2" src="images\adv2.png">
+                    <img class="adv2" src="..\images\adv2.png">
                 </li>
                 <li>
                     <a class="adv_3">Доставка по Ростовской области</a>
-                    <img class="adv3" src="images\adv3.png">
+                    <img class="adv3" src="..\images\adv3.png">
                 </li>
                 <li>
                     <a class="adv_4">Минимум в два раза сохкратятся ваши расходы</a>
-                    <img class="adv4" src="images\adv4.png">
+                    <img class="adv4" src="..\images\adv4.png">
                 </li>
                 <li>
                     <a class="adv_5">Гарантия на 5 лет</a>
-                    <img class="adv5" src="images\adv5.png">
+                    <img class="adv5" src="..\images\adv5.png">
                 </li>
                 <li>
                     <a class="adv_6">Разрабатываем полностью готовый проект</a>
-                    <img class="adv6" src="images\adv6.png">
+                    <img class="adv6" src="..\images\adv6.png">
                 </li>
             </li>
         </ul>
-        <button class="consult" id="button-199576"  target="_blank" onclick="FDPopup.open(199577,{'hideCloseBtn':false,'host':'formdesigner.ru','overlay':{'background':'#000000','opacity':0.1}}); return false;" href="https://formdesigner.ru/form/view/199577">Связаться с консультантом</button>
+        <button class="consult" id="button-199576" onclick="openForm()">Связаться с консультантом</button>
+        <script text="javascript">
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+        <div class="form-popup" id="myForm">
+            <div class="popup-fade"></div>
+            <form class="form-container">
+              
+              <h1>Вход</h1>
+          
+              <label for="email"><b>Почта</b></label>
+              <input type="text" placeholder="Ваша почта" name="email" required>
+              
+              <label for="psw"><b>Пароль</b></label>
+              <input type="password" placeholder="Ваш пароль" name="psw" required>
+          
+              <button type="submit" class="btn">Вход</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+              
+            </form>
+            
+          </div>
+          
         <span>
             <div class="line_1"></div>
             <h2 class="section2_text">Выгодные решения</h2>
@@ -96,23 +124,23 @@
         <span class="solutions">
             <div class="sol_1">
                 <a>Трековые светильники</a>
-                <img class="light_1" src="images\light1.png">
+                <img class="light_1" src="..\images\light1.png">
             </div>
             <div class="sol_2">
                 <a>Подвесные светильники</a>
-                <img class="light_2" src="images\light2.png">
+                <img class="light_2" src="..\images\light2.png">
             </div>
             <div class="sol_3"> 
                 <a>Встраевыемые светильники</a>
-                <img class="light_3" src="images\light3.png">
+                <img class="light_3" src="..\images\light3.png">
             </div>
             <div class="sol_4">
                 <a>Точечные светильники</a>
-                <img class="light_4" src="images\light4.png">
+                <img class="light_4" src="..\images\light4.png">
             </div>
             <div class="sol_5">
                 <a>Линейные светильники</a>
-                <img class="light_5" src="images\light5.png">
+                <img class="light_5" src="..\images\light5.png">
             </div>
         </span>
         
@@ -133,22 +161,22 @@
   
     <div class="svodka">
         
-            <img class="panel_1_img" src="images\door.png">
+            <img class="panel_1_img" src="..\images\door.png">
             <h3 class="panel_1_head">Техническое освещение</h3>
             <a class="panel_1">Трековое освещение, линейные светильники, встроенные и накладные светильники</a>
         
         
-            <img class="panel_2_img" src="images\switch.png">
+            <img class="panel_2_img" src="..\images\switch.png">
             <h3 class="panel_2_head">Электро-установочные изделия</h3>
             <a class="panel_2">Дриммеры, выключатели, розетки</a>
 
         
-            <img class="panel_3_img" src="images\planshet.png">
+            <img class="panel_3_img" src="..\images\planshet.png">
             <h3 class="panel_3_head">Система управления светом</h3>
             <a class="panel_3">Системы Dali, контроллеры Casambi, smart- системы, голосовое управление</a> 
 
 
-            <img class="panel_4_img" src="images\room.png">
+            <img class="panel_4_img" src="..\images\room.png">
             <h3 class="panel_4_head">Декоративное освещение</h3>
             <a class="panel_4">Люстры, бра, подсветка, интерьерный свет</a>
             
@@ -157,21 +185,21 @@
     </div>
     <span class="portfolio">
         <h2>Портфолио</h2>
-        <img class="room_1" src="images\room1.png">
+        <img class="room_1" src="..\images\room1.png">
         <h3 class="project_name1 project_title">ЖК Максим Горький</h3>
         <p class="project_size1 project_size">Квартира Площадь 70 м²</p>
         <p class="price_1 price_styles">Стоимость: 342 000 р</p>
         <p class="price_crossed_1">394000 р</p>
         <p class="profit_1">Сэкономили 50к+</p>
 
-        <img class="room_2" src="images\room2.png">
+        <img class="room_2" src="..\images\room2.png">
         <h3 class="project_name2 project_title">ЖК Екатиринский</h3>
         <p class="project_size2 project_size">Квартира Площадь 82 м²</p>
         <p class="price_2 price_styles">Стоимость: 910 000 р</p>
         <p class="price_crossed_2">1 120 000 р</p>
         <p class="profit_2">Сэкономили 200к+</p>
 
-        <img class="room_3" src="images\room3.png">
+        <img class="room_3" src="..\images\room3.png">
         <h3 class="project_name3 project_title">OMODA КЛЮЧАВТО</h3>
         <p class="project_size3 project_size">Автосалон электромобилей Площадь 680 м²</p>
         <p class="price_3 price_styles">Стоимость: 1 680 000 р </p>
@@ -218,19 +246,19 @@
         <div class="line_3"></div>
         <ul>
             <li>
-                <img class="profit" src="logo\profit.png">
+                <img class="profit" src="..\logo\profit.png">
             </li>
             <li>
-                <img class="era" src="logo\era.png">
+                <img class="era" src="..\logo\era.png">
             </li>
             <li>
-                <img class="es" src="logo\es.png">
+                <img class="es" src="..\logo\es.png">
             </li>
             <li>
-                <img class="may" src="logo\may.png">
+                <img class="may" src="..\logo\may.png">
             </li>
             <li>
-                <img class="smartbuy" src="logo\smartbuy.png">
+                <img class="smartbuy" src="..\logo\smartbuy.png">
             </li>
         </ul>
     </span>
@@ -240,7 +268,7 @@
     </main>
    <footer class="footer">
         <div class="footer_background">
-            <img class="logo_footer" src="logo\эмблема.png">
+            <img class="logo_footer" src="..\logo\эмблема.png">
             <a class="number">7 495 502-78-38</a>
             <a class="email">lustry_tgn@gmail.ru</a>
             <a class="kr">© 2023 Lustry_TGN. Работаем с 2010 года. Вся информация на сайте носит справочный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.</a>
