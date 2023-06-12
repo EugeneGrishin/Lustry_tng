@@ -98,19 +98,23 @@
               document.getElementById("myForm").style.display = "none";
             }
             </script>
-        <div class="form-popup" id="myForm">
-            <div class="popup-fade"></div>
-            <form class="form-container">
+        <div class="form-popup"  id="myForm">
+            
+            <form class="form-container" action="mail.php" method="POST" >
               
               <h1>Вход</h1>
+
           
               <label for="email"><b>Почта</b></label>
               <input type="text" placeholder="Ваша почта" name="email" required>
+
+              <label for="">Введите ваше имя</label>
+      		  <input type="text" placeholder="Ваше имя" name="user_name">
               
-              <label for="psw"><b>Пароль</b></label>
-              <input type="password" placeholder="Ваш пароль" name="psw" required>
+                <label for="">Введите номер телефона</label>
+                <input type="text" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
           
-              <button type="submit" class="btn">Вход</button>
+              <button type="submit" class="btn">Отправить</button>
               <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
               
             </form>
