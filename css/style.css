@@ -1109,29 +1109,19 @@ color: #000000;
     position: absolute;
     width: 580px;
     height: 45px;
-    left: 730px;
+    left: 650px;
     top: 10px;
     text-align: center;
 }
 .questions_background {
     position: absolute;
     height: 670px;
-    left: 467px;
-    right: 497px;
+    left: 480px;
+    right: 480px;
     top: 100px;
     
     background: #3E3E41;
     border-radius: 10px;
-}
-.que_line_1 {
-    position: absolute;
-    height: 1px;
-    left: 10px;
-    right: 1251px;
-    width: 50px;
-    top: 50px;
-    
-    background: #A6A6A6;
 }
 .question_1 {
     position: absolute;
@@ -1146,55 +1136,105 @@ color: #000000;
     left: 1286px;
     right: 586px;
     
-    background-image: url(..\images\button+.png);
 }
-.que_line_2 {
+
+*:before,
+*:after {
+    box-sizing: border-box;
 }
-.question_2 {
+
+.faq p {
+    margin: 0 0 5px;
+    font-family: 'Oswald';
+    font-style: light;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+    display: flex;
+    align-items: center;
+
+    color: #EEEEEE;
 }
-.FAQ_button_2 {
+
+
+/* Faq */
+
+.faq {
+    max-width: 500px;
+    margin: 20px auto;
 }
-.que_line_3 {
+
+.faq-item {
+    margin-bottom: 5px;
+
+    border: 1px solid #b91125;
 }
-.question_3 {
+
+.faq-title {
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    cursor: pointer;
+
+
 }
-.FAQ_button_3 {
+
+.faq-title:after {
+    content: "";
+    display: block;
+
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+
+    position: absolute;
+    top: 50%;
+    right: 15px;
+
+    transform: translateY(-50%);
 }
-.que_line_4 {
+
+.faq-title:hover {
+    background-color: #b91125;
 }
-.question_4 {
+
+.faq-input {
+    width: 0;
+    height: 0;
+
+    -webkit-appearance: none;
+    appearance: none;
+
+    position: absolute;
 }
-.FAQ_button_4 {
+
+.faq-input:checked ~ .faq-title {
+    background-color: #b91125;
 }
-.que_line_5 {
+
+.faq-input:checked ~ .faq-title:after {
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent #fff transparent;
 }
-.question_5 {
+
+.faq-input:checked ~ .faq-text {
+    display: block;
 }
-.FAQ_button_5 {
-}
-.que_line_6 {
-}
-.question_6 {
-}
-.FAQ_button_6 {
-}
-.que_line_7 {
-}
-.question_7 {
-}
-.FAQ_button_7 {
-}
-.que_line_8 {
-}
-.question_8 {
-}
-.FAQ_button_8 {
-}
-.que_line_9 {
-}
-.question_9 {
-}
-.FAQ_button_9 {
+
+.faq-text {
+    display: none;
+    padding: 10px 15px;
+
+    color: #fff;
+    font-size: 14px;
 }
 
 
@@ -1204,15 +1244,15 @@ color: #000000;
     width: 1922px;
     height: 170.21px;
     left: 0px;
-    top: 6473px;
+   
 
 }
 .provider{
     position: absolute;
     width: 248px;
     height: 49.3px;
-    left: 838px;
-    top: 100px;
+    left: 836.87px;
+    top: 6170px;
     
     font-family: 'Oswald';
     font-style: normal;
@@ -1226,7 +1266,7 @@ color: #000000;
     position: absolute;
     width: 1920px;
     height: 0px;
-    top: 170px;
+    top: 6250px;
     
     
     border: 1px solid #A9A9A9;
@@ -1238,20 +1278,20 @@ color: #000000;
     width: 238px;
     height: 96.07px;
     left: 644px;
-    top: 200px;
+    top: 6260px;
 }
 .es{
     position: absolute;
     width: 98px;
     height: 96.36px;
     left: 974px;
-    top: 200px;
+    top: 6260px;
 }
 .smartbuy{
     box-sizing: border-box;
 
     position: absolute;
-    top: 200px;
+    top: 6260px;
     left: 398px;
     border: 1px solid rgba(0, 0, 0, 0.25);
 }
@@ -1260,14 +1300,14 @@ color: #000000;
     width: 129px;
     height: 81.8px;
     left: 1172px;
-    top: 200px;
+    top: 6260px;
 }
 .profit{
     box-sizing: border-box;
 
     position: absolute;
     left: 1373px;
-    top: 200px;
+    top: 6260px;
     border: 1px solid rgba(0, 0, 0, 0.25);
 }
 .providers_list li{
@@ -1484,7 +1524,6 @@ color: #000000;
     font-weight: 300;
     font-size: 19px;
     line-height: 30px;
-    /* or 158% */
     
     display: flex;
     align-items: center;
@@ -1526,30 +1565,41 @@ color: #000000;
     
     background: #EEEEEE;
 }
-.step_1 {
-    padding-left: 400px;
-    padding-top: 157px;
-}
-.step_1_header {
-    position: absolute;
-    width: 173px;
-    height: 60px;
-    left: 360px;
+.tutorial h5{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 19px;
     line-height: 30px;
 
+    
     display: flex;
     align-items: center;
     text-align: center;
     
     color: #000000;
 }
+.step_1 {
+    position: absolute;
+    width: 98px;
+    height: 94px;
+    left: 400px;
+    top: 150px;
+}
+.step_1_header {
+    position: absolute;
+    width: 173px;
+    height: 60px;
+    left: 361px;
+    top: 280px;
+}
 .step_2 {
     position: absolute;
-    bottom: 200px;
+    width: 98px;
+    height: 94px;
+    left: 400px;
+    top: 460px;
+   
 }
 .tutorial h3{
     position: absolute;
@@ -1596,14 +1646,47 @@ color: #000000;
     color: #000000;
 }
 .step_2_header {
+    position: absolute;
+    width: 273px;
+    height: 120px;
+    left: 311px;
+    top: 580px;
 }
 .step_3 {
-
+    position: absolute;
+    width: 98px;
+    height: 94px;
+    left: 700px;
+    top: 150px;
+    
 }
 .step_3_header {
+    position: absolute;
+    width: 251px;
+    height: 60px;
+    left: 634px;
+    top: 280px;
 }
 .step_4 {
+    position: absolute;
+    width: 98px;
+    height: 94px;
+    left: 700px;
+    top: 460px;
 }
 .step_4_header {
+    position: absolute;
+    width: 306px;
+    height: 90px;
+    left: 606px;
+    top: 580px;
+}
+.demo_footer{
+    position: absolute;
+    height: 303px;
+    left: 0px;
+    top: 2600px;
 }
 
+/*Страница светорасчета
+*/
