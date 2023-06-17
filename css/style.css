@@ -36,6 +36,7 @@ img{
     display: block;
     max-width: 100%;
 }
+
 ul.menu a {
     font-family: 'Oswald';
     font-style: normal;
@@ -137,10 +138,7 @@ li a:hover {
     height: 83px;
     left: 337px;
     top: 419px;
-
-    
-
-color: #FFFFFF;
+    color: #FFFFFF;
 }
 .slider-text{
     position: absolute;
@@ -1690,3 +1688,303 @@ color: #000000;
 
 /*Страница светорасчета
 */
+
+.svet_title {
+    position: absolute;
+    width: 164.17px;
+    height: 36px;
+    left: 372px;
+    top: 253px;
+}
+.subtitle_1 {
+    position: absolute;
+    width: 164.17px;
+    height: 36px;
+    left: 441px;
+    top: 346px;
+}
+.content_1 {
+    position: absolute;
+    width: 475px;
+    height: 36px;
+    left: 372px;
+    top: 389px;
+}
+.content_2 {
+    position: absolute;
+    width: 475px;
+    height: 36px;
+    left: 372px;
+    top: 438px;
+}
+.content_3 {
+    position: absolute;
+    width: 475px;
+    height: 36px;
+    left: 372px;
+    top: 487px;
+}
+.content_4 {
+    position: absolute;
+    width: 475px;
+    height: 36px;
+    left: 372px;
+    top: 536px;
+}
+.image_light_1 {
+    position: absolute;
+    width: 680px;
+    height: 445px;
+    left: 851px;
+    top: 238px;
+
+}
+.subtitle_2 {
+    position: absolute;
+    width: 379.14px;
+    height: 36px;
+    left: 481px;
+    top: 705.77px;
+}
+.termins_title{
+    position: absolute;
+    width: 510.01px;
+    height: 20px;
+    left: 471px;
+    top: 750px;
+}
+.termins {
+    position: absolute;
+    width: 510.01px;
+    height: 20px;
+    left: 471px;
+    top: 806px;
+}
+.subtitle_3 {
+    position: absolute;
+    width: 626.56px;
+    height: 36px;
+    left: 481px;
+    top: 1414px;
+}
+.contetn_2_text {
+    position: absolute;
+    width: 930.8px;
+    height: 118.19px;
+    left: 481px;
+    top: 1497.39px;
+}
+.subtitle_4 {
+    position: absolute;
+    width: 481.84px;
+    height: 36px;
+    left: 481px;
+    top: 1677px;
+}
+.contetn_3_text {
+    position: absolute;
+    width: 959.48px;
+    height: 118.19px;
+    left: 461px;
+    top: 1775.39px;
+}
+.project_1_example {
+    position: absolute;
+    width: 600px;
+    height: 420px;
+    left: 400px;
+    top: 1933.38px;
+}
+.img_1_subtext {
+    position: absolute;
+    width: 448.14px;
+    height: 266.97px;
+    left: 1061px;
+    top: 2029.77px;
+    
+}
+.subtitle_5 {
+    position: absolute;
+    width: 449px;
+    height: 60px;
+    left: 1033px;
+    top: 2379.7px;
+}
+.project_2_example {
+    position: absolute;
+    height: 560px;
+    left: 450px;
+    top: 2353px;
+}
+.project_2_text{
+    position: absolute;
+    width: 557px;
+    height: 397px;
+    left: 1033px;
+    top: 2500px;
+    
+}
+.svet_footer{
+    position: absolute;
+    height: 303px;
+    left: 0px;
+    top: 3100px;
+}
+
+
+/*Страница Контактов
+*/
+
+.map{
+    position: absolute;
+    width: 1923px;
+    height: 1011px;
+    left: 0px;
+    top: 404px;
+    z-index: 0;
+}
+.contacts_form{
+    position: absolute;
+    width: 600px;
+    height: 433px;
+    left: 970px;
+    top: 613px;
+    z-index: 1;
+    background: #E4E3E3;
+    border-radius: 50px;
+}
+.contacts_info h2{
+    padding-left: 10%;
+    color: #FFFFFF;
+}
+.contacts_info article{
+    position: absolute;
+    left: 100px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+}
+.contacts_adress{
+    width: 400px;
+    height: 50px;
+    top: 147px;
+}
+.contacts_phone {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    top: 206px;
+}
+.contacts_email {
+    position: absolute;
+    width: 400px;
+    height: 34px;
+    top: 265px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    
+}
+.name_form{
+    position: absolute;
+    width: 200px;
+    height: 84px;
+    left: 41px;
+    top: 120px;
+    
+}
+.contacts_form h2{
+    padding-left: 10%;
+}
+.email {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    
+}
+.email_form{
+    position: absolute;
+    width: 231px;
+    height: 84px;
+    left: 251px;
+    top: 121px;
+    
+}
+.msg_form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    
+    position: absolute;
+    width: 331px;
+    height: 160px;
+    left: 41px;
+    top: 217px;
+    
+}
+
+.msg {
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    
+    width: 300px;
+    height: 132px;
+    
+    background: #FFFFFF;
+    border: 1px solid #E2E1E5;
+    border-radius: 5px;
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.contacts_info{
+    position: absolute;
+    width: 600px;
+    height: 433px;
+    left: 346px;
+    top: 613px;
+    z-index: 1;
+    background: #383838;
+    border-radius: 50px;
+}
+.contacts_title {
+    position: absolute;
+    width: 171px;
+    height: 90px;
+    left: 408px;
+    top: 194px;
+}
+.contacts_subtitle {
+    position: absolute;
+    width: 441px;
+    height: 90px;
+    left: 725px;
+    top: 293px;
+}
+.contacts_footer{
+    position: absolute;
+    width: 100%;
+    height: 303px;
+    left: 0px;
+    top: 1465px;
+}
