@@ -1,8 +1,4 @@
-﻿@font-face{
-    font-family: "Intro Regular";
-    src: url(fonts\ofont.ru_Intro.ttf);
-}
-html{
+﻿html{
 
     width: 100%;
     max-width: 100%;
@@ -53,6 +49,7 @@ ul.menu a {
     left: 370px;
     top: 79px; 
     z-index: 1;
+    text-decoration: none;
 }
 .menu-button2 {
     position: absolute;
@@ -61,6 +58,7 @@ ul.menu a {
     left: 542px;
     top: 80px;
     z-index: 1;
+    text-decoration: none;
 }
 .menu-button3 {
     position: absolute;
@@ -69,6 +67,7 @@ ul.menu a {
     left: 712px;
     top: 80px;
     z-index: 1;
+    text-decoration: none;
 }
 .menu-button4 {
     position: absolute;
@@ -77,6 +76,7 @@ ul.menu a {
     left: 1050px;
     top: 79px;
     z-index: 1;
+    text-decoration: none;
 }
 .menu-button5 {
     position: absolute;
@@ -84,6 +84,7 @@ ul.menu a {
     height: 31px;
     left: 1255px;
     top: 80px;
+    text-decoration: none;
     z-index: 1;
 }
 .menu-button6{
@@ -93,6 +94,7 @@ ul.menu a {
     left: 1409px;
     top: 80px;
     z-index: 1;
+    text-decoration: none;
 }
 li a:hover {
     color: rgb(0, 0, 0); 
@@ -208,28 +210,7 @@ li a:hover {
     background: #9E9C9C;
     
 }
-.arrow-left{
-    margin: 20px 8px;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 0%;
-    right: 98%;
-    top: 50%;
-    bottom: 85.89%;
-    transform: rotate(180deg);
-}
-.arrow-right{
-    margin: 20px 8px;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    left: 95%;
-    right: 0%;
-    top: 50%;
-    bottom: 85.89%;
-    
-}
+
 .advantages{
     position: absolute;
     width: 759px;
@@ -1068,8 +1049,7 @@ color: #000000;
     width: 100%;
     height: 170.21px;
     left: 0px;
-    margin-bottom: -10px;
-    top: 2000px;
+    top: 300px;
 }
 .profit_1, .profit_2, .profit_3{
     font-family: 'Roboto';
@@ -1120,7 +1100,7 @@ color: #000000;
 
 .FAQ {
     position: absolute;
-    height: 877px;
+    height: 925px;
     left: 0px;
     right: 2px;
     top: 5463px;
@@ -1137,7 +1117,7 @@ color: #000000;
 }
 .questions_background {
     position: absolute;
-    height: 670px;
+    height: 800px;
     left: 480px;
     right: 480px;
     top: 100px;
@@ -1190,7 +1170,6 @@ color: #000000;
 .faq-item {
     margin-bottom: 5px;
 
-    border: 1px solid #b91125;
 }
 
 .faq-title {
@@ -1224,7 +1203,7 @@ color: #000000;
 }
 
 .faq-title:hover {
-    background-color: #b91125;
+    background-color: #811919;
 }
 
 .faq-input {
@@ -1335,6 +1314,7 @@ color: #000000;
 .providers_list li{
     list-style-type:none;
 }
+
 .main_footer{
     position: absolute;
     height: 303px;
@@ -1397,6 +1377,7 @@ color: #000000;
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    
 }
 .footer_nav_1 {
     position: absolute;
@@ -1404,6 +1385,8 @@ color: #000000;
     height: 43px;
     left: 1040.16px;
     top: 50px;
+    text-decoration: none;
+    color: #A9A9A9;
 }
 .footer_nav_2 {
     position: absolute;
@@ -1411,6 +1394,8 @@ color: #000000;
     height: 42px;
     left: 1040.16px;
     top: 100px;
+    text-decoration: none;
+    color: #A9A9A9;
 }
 .footer_nav_3 {
     position: absolute;
@@ -1418,6 +1403,8 @@ color: #000000;
     height: 42px;
     left: 1040.16px;
     top: 150px;
+    text-decoration: none;
+    color: #A9A9A9;
 }
 .footer_nav_4 {
     position: absolute;
@@ -1425,6 +1412,8 @@ color: #000000;
     height: 43px;
     left: 1271px;
     top: 50px;
+    text-decoration: none;
+    color: #A9A9A9;
 }
 .footer_nav_5 {
     position: absolute;
@@ -1432,6 +1421,8 @@ color: #000000;
     height: 42px;
     left: 1271px;
     top: 100px;
+    text-decoration: none;
+    color: #A9A9A9;
 }
 .footer_nav_6 {
     position: absolute;
@@ -1439,6 +1430,8 @@ color: #000000;
     height: 42px;
     left: 1271px;
     top: 150px;
+    text-decoration: none;
+    color: #A9A9A9;
 }
 .adress, .phone{
     font-family: 'Roboto';
@@ -1472,25 +1465,19 @@ color: #000000;
 .consult_2{
     position: absolute;
     width: 243.62px;
-    height: 30px;
+    height: 50px;
     left: 415.37px;
-    
-    
+    top: 100px;
     font-family: 'Oswald';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
+    font-size: 20px;
+    line-height: 30px;
+ 
+
     text-align: center;
-    
+
     color: #FFFFFF;
-    position: absolute;
-    width: 257.6px;
-    height: 48px;
-    left: 399.38px;
-    top: 100px;
     
     background: #811919;
     border-radius: 45px;
