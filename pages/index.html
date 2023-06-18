@@ -10,8 +10,49 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../css/itc-slider.css">
+    <script src="../js/itc-slider.js" defer></script>
+    <style>
+        
+    
+    
+        .container {
+        position: absolute;
+        width: 1920px;
+        left: 0px;
+        top: 180px;
+        max-width: 100%;
+        margin: 0 auto;
+        }
+    
+        .itc-slider-items {
+          counter-reset: slide;
+        }
+    
+        .itc-slider-item {
+          flex: 0 0 100%;
+          max-width: 100%;
+          counter-increment: slide;
+          height: 250px;
+          position: relative;
+        }
+    
+        .itc-slider-item::before {
+          content: counter(slide) "/5";
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          color: #fff;
+          font-style: italic;
+          font-size: 32px;
+          font-weight: bold;
+          display: block;
+        }
+    
+        
+      </style>
 </head>
 <body>
     <header>
@@ -44,21 +85,36 @@
 
     </header>
     <main>
-        <div>
-            <img class="slider" src="..\images\sldimg.png">
-            <h1 class="slider-header">Какая встреча пройдет продуктивнее? </h1>
-            <p class="slider-text">Холодные оттенки света стимулируют умственную и физическую активность человека, помогают сконцентрироваться.</p>
-            <div class="slider-section_turned"></div>
-            <div class="slider-section_1"></div>
-            <div class="slider-section_2"></div>
-            
-        <svg class="arrow-left" viewBox="0 0 5 9">
-        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" ></path>
-         </svg>
-         <svg class="arrow-right" viewBox="0 0 5 9">
-         <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" ></path>
-         </svg>
+        <div class="container">
+
+            <div class="itc-slider" data-slider="itc-slider" data-loop="false" data-autoplay="false">
+              <div class="itc-slider-wrapper">
+                <div class="itc-slider-items">
+                  <div class="itc-slider-item">
+                    <img class="slider" src="..\images\sldimg.png">
+                    <h1 class="slider-header">Какая встреча пройдет продуктивнее? </h1>
+                    <p class="slider-text">Холодные оттенки света стимулируют умственную и физическую активность человека, помогают сконцентрироваться.</p>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img class="slider" src="..\images\sldimg2.png">
+                    <div class="bg_dark"></div>
+                    <h1 class="slider-header">В какое место точно вернутся гости? </h1>
+                    <p class="slider-text">Неверно освещенное пространство будет задыхаться от недостатка света, проигрывать в уютности и насыщенности красок. Технология Vivid Natural с теплой цветовой температурой создаст комфортную расслабленную атмосферу.</p>
+                  </div>
+                  <div class="itc-slider-item">
+                    <img class="slider" src="..\images\sldimg3.png">
+                    <div class="bg_dark"></div>
+                    <h1 class="slider-header">Для чего составлять проект освещения?</h1>
+                    <p class="slider-text">Результатом становится реализация оптимального уровня освещенности, улучшающего функциональность и внешний вид помещения.</p>
+                </div>
+              </div>
+              <button class="itc-slider-btn itc-slider-btn-prev"></button>
+              <button class="itc-slider-btn itc-slider-btn-next"></button>
+            </div>
+        
+          </div>
         </div>
+       
         <h1 class="advantages">Наши приемущества</h1>
         <ul class="adv">
             <li>
@@ -100,19 +156,19 @@
             </script>
         <div class="form-popup"  id="myForm">
             
-            <form class="form-container" action="mail.php" method="POST" >
+            <form class="form-container" action="mail.php" method="post" id="my_form">
               
               <h1>Вход</h1>
 
           
               <label for="email"><b>Почта</b></label>
-              <input type="text" placeholder="Ваша почта" name="email" required>
+              <input type="text" placeholder="Ваша почта" name="useremail" required>
 
               <label for="">Введите ваше имя</label>
-      		  <input type="text" placeholder="Ваше имя" name="user_name">
+      		  <input type="text" placeholder="Ваше имя" name="username" required>
               
                 <label for="">Введите номер телефона</label>
-                <input type="text" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+                <input type="text" name="userphone" placeholder="+7 (999) 99 99 999" required>
           
               <button type="submit" class="btn">Отправить</button>
               <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
@@ -120,7 +176,22 @@
             </form>
             
           </div>
-          
+         <!-- <script>
+            let $form = $('form');
+            $form.on('submit', function(e){
+                e.preventDefault();
+                let data = $form.serialize();
+                $.post(
+                    e.target.action,
+                    data,
+                    function(response){
+                        $form.find('button[type="submit"]').attr('disabled', true);
+                        console.log(response);
+                    }
+                );
+            });
+          </script>-->
+
         <span>
             <div class="line_1"></div>
             <h2 class="section2_text">Выгодные решения</h2>
