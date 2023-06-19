@@ -123,8 +123,9 @@ li a:hover {
     position: absolute;
     width: 186px;
     height: 191.92px;
-    left: 851px;
-    top: 2.08px;
+    left: 850px;
+    top: 0px;
+    z-index: 1;
 }
 .slider{
     position: absolute;
@@ -2048,3 +2049,190 @@ color: #000000;
     left: 0px;
     top: 1465px;
 }
+
+
+@media screen and (max-width: 767px) {
+    
+
+}
+@media (min-width: 990px) {
+    
+   }
+   
+@media screen and (max-width: 1440px) {
+    .head{
+        width: 100%;
+        height: 130px;
+        
+        }
+        .menu {
+            width: 100%;
+            
+        }
+        .menu-button1 {
+            left: 1%;
+            top: 43%;
+        }
+        .menu-button2 {
+            left: 12.5%;
+            top: 43%;
+        }
+        .menu-button3 {
+            left: 25%;
+            top: 43%;
+        }
+        .menu-button4 {
+            left: 52%;
+            top: 43%;
+        }
+        .menu-button5 {
+            left: 67%;
+            top: 43%;
+        }
+        .menu-button6 {
+            left: 75%;
+            top: 43%;
+        }
+        .navpage {
+            width: 100%;
+            top: 40%;
+            
+        }
+        .logo {
+            width: 120px;
+            height: 130px;
+            text-align: center;
+            left: 40%;
+            z-index: 1;
+        }
+        .slider{
+            width: 100%;
+            height: 600px;
+        }
+        .itc-slider-wrapper {
+            margin-top: -50px;
+        }
+        
+        .slider-header {
+            left: 0;
+            top: 75px;
+        }
+        .slider-text {
+            top: 200px;
+            left: 10%;
+        }
+        .bg_dark {
+            height: 600px;
+        }
+        .itc-slider-btn {
+            margin-top: -100px;
+        }
+        .itc-slider-btn-prev {
+            margin-top: -100px;
+        }
+        .itc-slider-btn-next {
+            margin-top: -100px;
+            
+        }
+        .advantages {
+            top: 75%;
+            left: 30%;
+        }
+        .adv_1 {
+            left: 25%;
+            top: 90%;
+        }
+        .adv1 {
+            left: 20%;
+            top: 89%;
+        }
+        .adv_2 {
+            top: 90%;
+            left: 50%;
+        }
+        .adv2 {
+            top: 89%;
+            left: 45%;
+        }
+        .adv_3 {
+            top: 90%;
+            left: 80%;
+        }
+        .adv3 {
+            top: 89%;
+            left: 75%;
+        }
+        .adv_4 {
+            top: 100%;
+            left: 25%;
+        }
+        .adv4 {
+            top: 100%;
+            left: 20%;
+        }
+        .adv_5 {
+            top: 100%;
+            left: 50%;
+        }
+        .adv5 {
+            top: 100%;
+            left: 45%;
+        }
+        .adv_6 {
+            top: 100%;
+            left: 80%;
+        }
+        .adv6 {
+            top: 100%;
+            left: 75%;
+        }
+        .consult {
+            top: 1200px;
+            left: 45%;
+        }
+        .solutions a{
+            font-size: 24px;
+            margin-left: -180px;
+        }
+        .line_1 {
+            top: 1280px; 
+        }
+        .section2_text {
+            top: 1300px;
+        }
+        .sol_1 {
+            left: 15%;
+            top: 1400px;
+            width: 500px;
+            
+        }
+        .light_1 {
+            top: 30%;
+            width: 250px;
+            height: 200px;
+        }
+        .sol_2 {
+            left: 60%;
+            top: 1400px;
+            width: 500px;
+        }
+        .light_2 {
+            top: 30%;
+            width: 250px;
+            height: 200px;
+        }
+        .sol_3 {
+        }
+        .light_3 {
+        }
+        .sol_4 {
+        }
+        .light_4 {
+        }
+        .sol_5 {
+        }
+        .light_5 {
+        }
+        
+        
+   }
