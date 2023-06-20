@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg_color: #02a4fd;
+  --text_color: white;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+.title {
+  margin: 15px;
+}
+
+/* Layout */
+.adaptive,
+.responsive {
+  width: 100vw;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 50px 150px 50px;
+  grid-auto-rows: 50px;
+  gap: 10px;
+}
+
+.responsive {
+  max-width: 96vw;
+  grid-template-columns: 2.5fr minmax(250px, 1fr);
+}
+
+.adaptive *,
+.responsive * {
+  background: var(--bg_color);
+  color: var(--text_color);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.header {
+  grid-column: span 2;
+}
+.content {
+  grid-column: 1;
+}
+.footer {
+  grid-column: span 2;
+}
+
+@media (max-width: 1000px) {
+  .adaptive {
+    max-width: 768px;
+    grid-template-columns: 1fr 250px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 4.5vw;
+  }
+  .adaptive {
+    max-width: 480px;
+  }
+  .sidebar {
+    grid-column: span 2;
+  }
+  .content {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 5vw;
+  }
+  .adaptive {
+    width: 96vw;
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    grid-column: span 2;
+  }
+  .content {
+    grid-column: span 2;
+  }
+}

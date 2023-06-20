@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>Главная</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -38,6 +38,7 @@
                     <a class="menu-button6" href="..\pages\contacts.html">Контакты</a>
                 </li>
             </ul>
+            
             
         </span>
         <img class="logo" src="..\logo\эмблема.png">
@@ -105,7 +106,7 @@
                 </li>
             </li>
         </ul>
-        <button class="consult" id="button-199576" onclick="openForm()">Связаться с консультантом</button>
+        <button class="consult"  onclick="openForm()">Связаться с консультантом</button>
         <script text="javascript">
             function openForm() {
               document.getElementById("myForm").style.display = "block";
@@ -131,7 +132,7 @@
                 <label for="">Введите номер телефона</label>
                 <input type="text" name="userphone" placeholder="+7 (999) 99 99 999" required>
           
-              <button type="submit" class="btn"onclick="closeForm()" >Отправить</button>
+              <button type="submit" class="btn" onclick="closeForm()" >Отправить</button>
               <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
               
             </form>
@@ -145,28 +146,28 @@
         </span>
         <span class="solutions">
             <div class="sol_1">
-                <a>Трековые светильники</a>
+                <p class="sol_1_text"><b>Трековые</b> светильники</p>
                 <img class="light_1" src="..\images\light1.png">
             </div>
             <div class="sol_2">
-                <a>Подвесные светильники</a>
+                <p class="sol_2_text"><b>Подвесные</b> светильники</p>
                 <img class="light_2" src="..\images\light2.png">
             </div>
             <div class="sol_3"> 
-                <a>Встраевыемые светильники</a>
+            <p class="sol_3_text"><b>Встраевыемые</b> светильники</p>
                 <img class="light_3" src="..\images\light3.png">
             </div>
             <div class="sol_4">
-                <a>Точечные светильники</a>
+            <p class="sol_4_text"><b>Точечные</b> светильники</p>
                 <img class="light_4" src="..\images\light4.png">
             </div>
             <div class="sol_5">
-                <a>Линейные светильники</a>
+            <p class="sol_5_text"><b>Линейные</b> светильники</p>
                 <img class="light_5" src="..\images\light5.png">
             </div>
         </span>
         
-        <button class="order" id="button-199576"  target="_blank" onclick="openForm()">Заказать поставку</button>
+        <button class="order" target="_blank" onclick="openForm()">Заказать поставку</button>
         
         <span>
             <div class="line_2"></div>
@@ -316,19 +317,19 @@
         <div class="line_3"></div>
         <ul>
             <li>
-                <img class="profit" src="..\logo\profit.png">
+                <a href="https://profitlight.ru"><img class="profit" src="..\logo\profit.png"></a>
             </li>
             <li>
-                <img class="era" src="..\logo\era.png">
+                <a href="https://www.eraworld.ru"><img class="era" src="..\logo\era.png"></a>
             </li>
             <li>
-                <img class="es" src="..\logo\es.png">
+                <a href="https://elektrostandard.ru"><img class="es" src="..\logo\es.png"></a>
             </li>
             <li>
-                <img class="may" src="..\logo\may.png">
+                <a href="https://www.maysun.ru"><img class="may" src="..\logo\may.png"></a>
             </li>
             <li>
-                <img class="smartbuy" src="..\logo\smartbuy.png">
+                <a href="https://smartbuy-russia.ru"><img class="smartbuy" src="..\logo\smartbuy.png"></a>
             </li>
         </ul>
     </span>
@@ -341,7 +342,7 @@
             <a class="number">7 495 502-78-38</a>
             <a class="email">lustry_tgn@gmail.ru</a>
             <a class="kr">© 2023 Lustry_TGN. Работаем с 2010 года. Вся информация на сайте носит справочный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.</a>
-            <button class="consult_2">Записаться на консультацию</button>
+            <button class="consult_2" onclick="openForm()">Записаться на консультацию</button>
             <div class="footer_nav">
                 <a class="footer_nav_1" href="#port">Проекты</a>
                 <a class="footer_nav_2" href="..\pages\svet.html">Светорасчет</a>

@@ -11,13 +11,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Marmelad&display=swap" rel="stylesheet">
+    <script src="../js/burger.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="head">
-            <ul class="menu">
+            <div class="container">
+                <div class="navbar__wrap">
+                  <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                      <span class="bar"></span> <span class="bar"></span>
+                      <span class="bar"></span>
+                    </div>
+                  </div>
+            <ul class="menu" id="head">
                 <li>
-                    <a class="menu-button1 scrollto" href=".\index.php">Главная</a>
+                    <a class="menu-button1 scrollto" href="/index.php">Главная</a>
                 </li>
                 <li>
                     <a class="menu-button2 scrollto" href="\index.php#port">Портфолио</a>
@@ -29,18 +38,18 @@
                     <a class="menu-button4" href=".\demo.html">Демонстрация</a>
                 </li>
                 <li>
-                    <a class="menu-button5 scrollto" href=".\index.php#about_us">О нас</a>
+                    <a class="menu-button5 scrollto" href="/index.php#about_us">О нас</a>
                 </li>
                 <li>
                     <a class="menu-button6" href=".\contacts.html">Контакты</a>
                 </li>
             </ul>
-            
+          </div>  
         </span>
         <div class="navpage"></div>
         <img class="logo" src="../logo/эмблема.png">
     </nav>
-
+    <div class="popup" id="popup"></div>
     </header>
     <main>
       <div class="svet_container"> <span>
@@ -128,7 +137,38 @@
             <a class="number">7 495 502-78-38</a>
             <a class="email">lustry_tgn@gmail.ru</a>
             <a class="kr">© 2023 Lustry_TGN. Работаем с 2010 года. Вся информация на сайте носит справочный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса Российской Федерации.</a>
-            <button class="consult_2" id="button-199576"  target="_blank" onclick="FDPopup.open(199577,{'hideCloseBtn':false,'host':'formdesigner.ru','overlay':{'background':'#000000','opacity':0.1}}); return false;" href="https://formdesigner.ru/form/view/199577">Записаться на консультацию</button>
+            <button class="consult_2" onclick="openForm()">Записаться на консультацию</button>
+            <script text="javascript">
+                function openForm() {
+                  document.getElementById("myForm").style.display = "block";
+                }
+                
+                function closeForm() {
+                  document.getElementById("myForm").style.display = "none";
+                }
+                </script>
+             <div class="form-popup"  id="myForm">
+            
+                <form class="form-container" action="php\mail.php" method="post" id="form">
+                  
+                  <h1>Вход</h1>
+    
+              
+                  <label for="email"><b>Почта</b></label>
+                  <input type="text" placeholder="Ваша почта" name="useremail" required>
+    
+                  <label for="">Введите ваше имя</label>
+                    <input type="text" placeholder="Ваше имя" name="username" required>
+                  
+                    <label for="">Введите номер телефона</label>
+                    <input type="text" name="userphone" placeholder="+7 (999) 99 99 999" required>
+              
+                  <button type="submit" class="btn" onclick="closeForm()" >Отправить</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Закрыть</button>
+                  
+                </form>
+                
+              </div>
             <div class="footer_nav">
                 <a class="footer_nav_1" href="/index.php#port">Проекты</a>
                 <a class="footer_nav_2" href=".\svet.html">Светорасчет</a>

@@ -1,14 +1,11 @@
 ﻿html{
 
-    width: 100%;
-    max-width: 100%;
+    
     overflow-x: hidden;
 }
 
 body
   {
-    width: 100%;
-    max-width: 100%;
     overflow-x: hidden;
   }
 h1{
@@ -347,7 +344,7 @@ top: 1114px;
     z-index: 1000;
   }
   
-  /* Добавление стилей в контейнер форм */
+ 
   .form-container {
     max-width: 300px;
     padding: 10px;
@@ -355,7 +352,7 @@ top: 1114px;
     z-index: 50;
   }
   
-  /* Поля ввода полной ширины */
+
   .form-container input[type=text], .form-container input[type=password] {
     width: 250px;
     padding: 15px;
@@ -363,14 +360,56 @@ top: 1114px;
     border: none;
     background: #f1f1f1;
   }
-  
-  /* Когда входы получают фокус, сделайте что-нибудь */
-  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-  }
+.solutions p{
+    font-family: 'Lato';
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    
+    color: #000000;
+}
+.sol_1_text {
+    position: absolute;
+    width: 219.26px;
+    height: 108px;
+    top: 40%;
+    left: 50%;
+}
+
+.sol_2_text {
+    position: absolute;
+    width: 219.26px;
+    height: 108px;
+    top: 40%;
+    left: 55%;
+}
+.sol_3_text {
+    position: absolute;
+    width: 219.26px;
+    height: 108px;
+    top: 60%;
+    left: 40%;
+}
+.sol_4_text {
+    position: absolute;
+    width: 219.26px;
+    height: 108px;
+    top: 60%;
+    left: 40%;
+
+}
+.sol_5_text {
+    position: absolute;
+    width: 219.26px;
+    height: 108px;
+    top: 60%;
+    left: 40%;
+}
+
+
+ 
 .form-container .btn {
-    background-color: #4CAF50;
+    background-color: #2b7e2e;
     color: white;
     padding: 16px 20px;
     border: none;
@@ -1949,6 +1988,25 @@ color: #000000;
     height: 34px;
     top: 265px;
 }
+.contacts_button{
+    position: absolute;
+    width: 250px;
+    height: 48px;
+    right: 20px;
+    bottom: 10px;
+    
+    background: #811919;
+    border-radius: 79px;
+
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
 
 .name {
     display: flex;
@@ -2050,11 +2108,261 @@ color: #000000;
     top: 1465px;
 }
 
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 15px;
+  }
+  
+  .navbar__wrap {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .hamb {
+    display: none;
+  }
+  
+  .popup {
+    display: none;
+  }
+  
+
+
 
 @media screen and (max-width: 767px) {
+    .navbar__wrap .menu {
+        display: none;
+      }
+      .menu-button1 {
+        top:10%
+        
+    }
+    .menu-button1 {
+        position: absolute;
+        width: 138px;
+        height: 31px;
+        left: 20%;
+        top: 10%; 
+        z-index: 1;
+        text-decoration: none;
+    }
+    .menu-button2 {
+        position: absolute;
+        width: 137px;
+        height: 30px;
+        left: 20%;
+        top: 15%; 
+        z-index: 1;
+        text-decoration: none;
+    }
+    .menu-button3 {
+        position: absolute;
+        width: 138px;
+        height: 29px;
+        left: 20%;
+        top: 20%; 
+        z-index: 1;
+        text-decoration: none;
+    }
+    .menu-button4 {
+        position: absolute;
+        width: 170px;
+        height: 31px;
+        left: 20%;
+        top: 25%; 
+        z-index: 1;
+        text-decoration: none;
+    }
+    .menu-button5 {
+        position: absolute;
+        width: 120px;
+        height: 31px;
+        left: 20%;
+        top: 30%; 
+        text-decoration: none;
+        z-index: 1;
+    }
+    .menu-button6{
+        position: absolute;
+        width: 141px;
+        height: 32px;
+        left: 20%;
+        top: 35%;
+        z-index: 1;
+        text-decoration: none;
+    }
     
+      .hamb {
+        display: flex;
+        align-items: center;
+      }
+    
+      .hamb__field {
+        padding: 10px 20px;
+        cursor: pointer;
+        z-index: 5;
+      }
+    
+      .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: #fff;
+        transition: 0.2s;
+      }
+    
+      .popup {
+        position: fixed;
+        top: 0;
+        left: -25%;
+        width: 25%;
+        height: 100%;
+        background-color: #9c9c9c;
+        z-index: 100;
+        display: flex;
+        transition: 0.3s;
+        z-index: 1;
+      }
+    
+      .popup.open {
+        left: 0;
+      }
+    
+      .popup .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+       
+        justify-content: start;
+        padding: 50px 0;
+        overflow: auto;
+      }
+    
+      .popup .menu > li {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+    
+      .popup .menu > li > a {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #3f3f3f;
+        text-align: left;
+        display: inline-block;
+        vertical-align: middle;
+      }
 
+      .svet_container {
+        display: flex;
+        left: 10%;
+    }
+    .svet_container p{
+        font-size: 12px;
+        
+    }
+    .svet_title {
+        text-align: left;
+        left: 10%;
+        top: 200px;
+    }
+    .subtitle_1 {
+        left: 15%;
+    }
+    .content_1 {
+        left: 15%;
+    }
+    .content_2 {
+        left: 15%;
+    }
+    .content_3 {
+        left: 15%;
+    }
+    .content_4 {
+        left: 15%;
+    }
+    .image_light_1 {
+        width: 350px;
+        height: 250px;
+        left: 50%;
+    }
+    .subtitle_2 {
+        left: 20%;
+    }
+    .termins_title {
+        left: 15%;
+    }
+    .termins {
+        left: 5px;
+        font-size: 14px;
+        text-align: left;
+    }
+    .subtitle_3 {
+        text-align: left;
+        left: 10%;
+        top: 1200px;
+    }
+    .contetn_2_text {
+        left: 5%;
+        top: 1300px;
+        width: 90%;
+    }
+   
+    .subtitle_4 {
+        left: 10%;
+        top: 1450px;
+    }
+    
+    .contetn_3_text {
+        left: 5%;
+        top: 1525px;
+        font-size: 10px;
+        width: 90%;
+    }
+    .project_1_example {
+        width: 450px;
+        height: 350px;
+        left: 25%;
+        top: 1750px;
+    }
+    .img_1_subtext {
+        top: 2100px;
+        left: 5%;
+        width: 600px;
+    }
+    .subtitle_5 {
+        top: 2300px;
+        left: 25%;
+        width: 500px;
+    }
+    .project_2_example {
+        width: 350px;
+        height: 500px;
+        left: 5%;
+    }
+    .project_2_text {
+        left: 55%;
+        top: 2350px;
+        height: 100%;
+        width: 40%;
+        font-size: 15px;
+    }
+    
 }
+   
+
+
 @media (min-width: 990px) {
     
    }
@@ -2065,37 +2373,10 @@ color: #000000;
         height: 130px;
         
         }
-        .menu {
-            width: 100%;
-            
-        }
-        .menu-button1 {
-            left: 1%;
-            top: 43%;
-        }
-        .menu-button2 {
-            left: 12.5%;
-            top: 43%;
-        }
-        .menu-button3 {
-            left: 25%;
-            top: 43%;
-        }
-        .menu-button4 {
-            left: 52%;
-            top: 43%;
-        }
-        .menu-button5 {
-            left: 67%;
-            top: 43%;
-        }
-        .menu-button6 {
-            left: 75%;
-            top: 43%;
-        }
+       
         .navpage {
             width: 100%;
-            top: 40%;
+            
             
         }
         .logo {

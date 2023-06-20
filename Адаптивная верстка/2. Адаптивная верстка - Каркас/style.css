@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg_color: #02a4fd;
+  --text_color: white;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-items: center;
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+  grid-template-rows: auto 1fr;
+  padding-bottom: 10px;
+}
+
+.title {
+  margin: 15px;
+}
+
+.width {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 28px;
+  font-weight: 300;
+  text-transform: initial;
+  color: black;
+}
+.width * {
+  display: none;
+}
+.width *:nth-child(1) {
+  display: block;
+}
+
+/* Layout */
+.adaptive {
+  width: 100vw;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-template-rows: 100px 1fr 100px;
+  grid-auto-rows: 50px;
+  gap: 10px;
+}
+
+.adaptive > * {
+  background: var(--bg_color);
+  color: var(--text_color);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.header {
+  grid-column: span 2;
+}
+.content {
+  grid-column: 1;
+  position: relative;
+}
+.footer {
+  grid-column: span 2;
+}
+
+@media (max-width: 1200px) {
+  .width *:nth-child(1) {
+    display: none;
+  }
+  .width *:nth-child(2) {
+    display: block;
+  }
+  .adaptive {
+    max-width: 1000px;
+    grid-template-columns: 1fr 300px;
+  }
+}
+@media (max-width: 1000px) {
+  .width *:nth-child(2) {
+    display: none;
+  }
+  .width *:nth-child(3) {
+    display: block;
+  }
+  .adaptive {
+    max-width: 768px;
+    grid-template-columns: 1fr 250px;
+  }
+}
+@media (max-width: 768px) {
+  .width *:nth-child(3) {
+    display: none;
+  }
+  .width *:nth-child(4) {
+    display: block;
+  }
+  .title {
+    font-size: 4.5vw;
+  }
+  .adaptive {
+    max-width: 480px;
+  }
+  .sidebar {
+    grid-column: span 2;
+  }
+  .content {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 480px) {
+  .width {
+    font-size: 22px;
+  }
+  .width *:nth-child(4) {
+    display: none;
+  }
+  .width *:nth-child(5) {
+    display: block;
+  }
+  .title {
+    font-size: 5vw;
+  }
+  .adaptive {
+    width: 96vw;
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    grid-column: span 2;
+  }
+  .content {
+    grid-column: span 2;
+  }
+}

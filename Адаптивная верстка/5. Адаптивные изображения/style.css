@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --bg_color: #02a4fd;
+  --text_color: white;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+.title {
+  margin: 15px;
+}
+
+/* Layout */
+.adaptive {
+  width: 1200px;
+  height: 100%;
+  padding: 10px;
+  margin: auto;
+  color: var(--text_color);
+  background: var(--bg_color);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: start;
+  gap: 10px;
+}
+.block {
+  width: 100%;
+  height: 20vw;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid white;
+  background: black var(--img) center / cover;
+}
+.block strong {
+  margin: auto;
+  font-size: 100px;
+  color: #fffa;
+  mix-blend-mode: hard-light;
+  text-shadow: 1px 2px 4px black;
+}
+
+@media (max-width: 1200px) {
+  .adaptive {
+    width: 1000px;
+  }
+}
+@media (max-width: 1000px) {
+  .adaptive {
+    width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .adaptive {
+    width: 480px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .block {
+    height: 25vw;
+  }
+}
+@media (max-width: 480px) {
+  .adaptive {
+    width: 96vw;
+    grid-template-columns: 1fr;
+  }
+  .block {
+    height: 50vw;
+  }
+}
