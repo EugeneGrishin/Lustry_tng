@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
@@ -13,12 +13,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../js/itc-slider.js" defer></script>
     <script src="../js/script.js" defer></script>
+    <script src="../js/burger.js" defer></script>
 </head>
 <body>
     <header>
         <nav class="head">
-            
-            <ul class="menu">
+            <div class="container_header">
+                <div class="navbar__wrap">
+                    <div class="hamb">
+                      <div class="hamb__field" id="hamb">
+                        <span class="bar"></span> <span class="bar"></span>
+                        <span class="bar"></span>
+                      </div>
+                    </div>
+            <ul class="menu" id="head">
                 <li>
                     <a class="menu-button1 scrollto" href="#main">Главная</a>
                 </li>
@@ -38,13 +46,13 @@
                     <a class="menu-button6" href="..\pages\contacts.html">Контакты</a>
                 </li>
             </ul>
-            
+        </div>  
             
         </span>
         <img class="logo" src="..\logo\эмблема.png">
         <div class="navpage"></div>
     </nav>
-
+    <div class="popup" id="popup"></div>
     </header>
     <main>
         <div class="container" id="main">

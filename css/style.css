@@ -120,7 +120,7 @@ li a:hover {
     position: absolute;
     width: 186px;
     height: 191.92px;
-    left: 850px;
+    left: 47%;
     top: 0px;
     z-index: 1;
 }
@@ -2108,7 +2108,7 @@ color: #000000;
     top: 1465px;
 }
 
-.container {
+.container_header {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
@@ -2133,7 +2133,7 @@ color: #000000;
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 780px) {
     .navbar__wrap .menu {
         display: none;
       }
@@ -2358,162 +2358,36 @@ color: #000000;
         width: 40%;
         font-size: 15px;
     }
+    .contacts_title {
+        left: 50%;
+    }
+    .contacts_subtitle {
+        left: 35%;
+    }
+    .contacts_info {
+        left: 5%;
+        top: 38%;
+        width: 550px;
+        height: 400px;
+    }
+    .contacts_form {
+        left: 5%;
+        top: 82%;
+        width: 550px;
+        height: 400px;
+    }
+    
+    .contacts_button {
+        width: 150px;
+    }
+    .map {
+        left: 20%;
+        top: 125%;
+        width: 550px;
+        height: 200px;
+    }
     
 }
    
 
 
-@media (min-width: 990px) {
-    
-   }
-   
-@media screen and (max-width: 1440px) {
-    .head{
-        width: 100%;
-        height: 130px;
-        
-        }
-       
-        .navpage {
-            width: 100%;
-            
-            
-        }
-        .logo {
-            width: 120px;
-            height: 130px;
-            text-align: center;
-            left: 40%;
-            z-index: 1;
-        }
-        .slider{
-            width: 100%;
-            height: 600px;
-        }
-        .itc-slider-wrapper {
-            margin-top: -50px;
-        }
-        
-        .slider-header {
-            left: 0;
-            top: 75px;
-        }
-        .slider-text {
-            top: 200px;
-            left: 10%;
-        }
-        .bg_dark {
-            height: 600px;
-        }
-        .itc-slider-btn {
-            margin-top: -100px;
-        }
-        .itc-slider-btn-prev {
-            margin-top: -100px;
-        }
-        .itc-slider-btn-next {
-            margin-top: -100px;
-            
-        }
-        .advantages {
-            top: 75%;
-            left: 30%;
-        }
-        .adv_1 {
-            left: 25%;
-            top: 90%;
-        }
-        .adv1 {
-            left: 20%;
-            top: 89%;
-        }
-        .adv_2 {
-            top: 90%;
-            left: 50%;
-        }
-        .adv2 {
-            top: 89%;
-            left: 45%;
-        }
-        .adv_3 {
-            top: 90%;
-            left: 80%;
-        }
-        .adv3 {
-            top: 89%;
-            left: 75%;
-        }
-        .adv_4 {
-            top: 100%;
-            left: 25%;
-        }
-        .adv4 {
-            top: 100%;
-            left: 20%;
-        }
-        .adv_5 {
-            top: 100%;
-            left: 50%;
-        }
-        .adv5 {
-            top: 100%;
-            left: 45%;
-        }
-        .adv_6 {
-            top: 100%;
-            left: 80%;
-        }
-        .adv6 {
-            top: 100%;
-            left: 75%;
-        }
-        .consult {
-            top: 1200px;
-            left: 45%;
-        }
-        .solutions a{
-            font-size: 24px;
-            margin-left: -180px;
-        }
-        .line_1 {
-            top: 1280px; 
-        }
-        .section2_text {
-            top: 1300px;
-        }
-        .sol_1 {
-            left: 15%;
-            top: 1400px;
-            width: 500px;
-            
-        }
-        .light_1 {
-            top: 30%;
-            width: 250px;
-            height: 200px;
-        }
-        .sol_2 {
-            left: 60%;
-            top: 1400px;
-            width: 500px;
-        }
-        .light_2 {
-            top: 30%;
-            width: 250px;
-            height: 200px;
-        }
-        .sol_3 {
-        }
-        .light_3 {
-        }
-        .sol_4 {
-        }
-        .light_4 {
-        }
-        .sol_5 {
-        }
-        .light_5 {
-        }
-        
-        
-   }
