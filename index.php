@@ -189,30 +189,30 @@
             <button class="order_cons" id="button-199576"  target="_blank" onclick="openForm()">Заказать расчет</button>
         </div>
 
-    <section class="svodka scrollto" id="about_us">
-        
+    <div class="svodka scrollto" id="about_us">
+            <div class="panel_1_container">
             <img class="panel_1_img" src="..\images\door.png">
             <h3 class="panel_1_head">Техническое освещение</h3>
             <a class="panel_1">Трековое освещение, линейные светильники, встроенные и накладные светильники</a>
-        
-        
+        </div>
+        <div class="panel_2_container">
             <img class="panel_2_img" src="..\images\switch.png">
             <h3 class="panel_2_head">Электро-установочные изделия</h3>
             <a class="panel_2">Дриммеры, выключатели, розетки</a>
-
-        
+        </div>
+        <div class="panel_3_container">
             <img class="panel_3_img" src="..\images\planshet.png">
             <h3 class="panel_3_head">Система управления светом</h3>
             <a class="panel_3">Системы Dali, контроллеры Casambi, smart- системы, голосовое управление</a> 
-
-
+        </div>
+        <div class="panel_4_container">
             <img class="panel_4_img" src="..\images\room.png">
             <h3 class="panel_4_head">Декоративное освещение</h3>
             <a class="panel_4">Люстры, бра, подсветка, интерьерный свет</a>
-            
+        </div>
             <button class="price" > <a href="https://drive.google.com/uc?export=download&id=162l7-3o3GKOUTc3WNzPS94XfmimdXG_-">Посмотреть весь каталог</a> </button>
-            
-    </section>
+    
+    </div>
 
     <span class="portfolio" id="port">
         <h2>Портфолио</h2>

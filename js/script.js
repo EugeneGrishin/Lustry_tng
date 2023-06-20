@@ -12,7 +12,7 @@ let $form = $('form');
                 var form_data = $(this).serialize(); 
             $.ajax({
                     type: "POST", 
-                    url: "../php/mail.php", 
+                    url: "./php/mail.php", 
                     data: form_data,
                     success: function () {
                         
